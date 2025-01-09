@@ -1,0 +1,150 @@
+@charset "utf-8";
+
+/* common */
+body{
+    font-size: 14px;
+    font-family: verdana,sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f8f8f8;
+}
+#cover{
+    background: #000;
+    opacity: 0.6;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: none;
+}
+#menu li{
+    list-style-type: none;
+}
+p{
+    line-height: 2;
+}
+.container{
+    width: 90%;
+    /* background-color:yellow */
+    margin: 0 auto;
+    .header-moble-menu {
+        float: right;
+        font-size: 24px;
+        cursor: pointer;
+    }
+}
+section{
+    padding: 60px;
+}
+section h2{
+    text-align: center;
+    margin: 0 0 60px;
+}
+section:nth-child(even){
+    background-color: #fff;
+}
+/* header */
+#menu{
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 100px;
+    color: #fff;
+    background: #4c81e9;
+    padding: 8px;
+    box-sizing: border-box;
+    width: 180px;
+    min-height: 100%;
+    transition: .4s;
+}
+.header-moble-menu{
+    font-size: 24px;
+    cursor: pointer;
+    float: right;
+}
+/* features */
+.features img{
+    width: 100%;
+}
+.features.item{
+    margin-bottom: 60px;
+}
+.features.item:last-child{
+    margin-bottom: 0;
+}
+/* news */
+.news .item{
+    text-align: center;
+}
+.news p{
+    text-align: left;
+}
+.news .item{
+    margin-bottom: 60px;
+}
+.news .item:last-child{
+    margin-bottom: 0;
+}
+
+/* medium */
+@media(min-width:570px){
+    /* body{
+        background-color: skyblue;
+        
+        } */
+         .features p{
+            width: 45%;
+            }
+            .features img{
+                width: 50%;
+            }
+            .pull-right{
+                float: right;
+                padding: left:5%;
+            }
+            .pull-left{
+                float: left;
+                padding: right:5%;
+            }
+            .features .item{
+                overflow: hidden;
+            }
+            .news .container{
+                display: flex;
+                justify-content: space-between;
+            }
+            .news .item img{
+                width: 100%;
+            }
+            .news .item{
+                width: 30%;
+                overflow: hidden;
+         }
+         /* .news p{
+         line break:break-all
+          */
+    }
+
+/*large */
+@media(min-width:820px){
+    body{
+        background-color: lime;
+} 
+.container{
+    width: 820px;
+}
+.header-pc-menu{
+    list-style: none;
+    padding: 0;
+    float: right;
+}
+.header-pc-menu>li{
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+}
+}
